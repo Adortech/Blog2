@@ -486,13 +486,13 @@ function App() {
 
         {/* All Posts */}
         <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Latest Posts</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Legfrissebb bejegyzések</h2>
           
           {posts.length === 0 ? (
             <div className="text-center py-12">
               <div className="text-gray-400 text-6xl mb-4">📝</div>
-              <h3 className="text-xl font-medium text-gray-900 mb-2">No posts yet</h3>
-              <p className="text-gray-600">Start creating amazing content!</p>
+              <h3 className="text-xl font-medium text-gray-900 mb-2">Még nincsenek bejegyzések</h3>
+              <p className="text-gray-600">Kezdje el a fantasztikus tartalom létrehozását!</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
