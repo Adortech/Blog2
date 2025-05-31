@@ -369,18 +369,18 @@ function App() {
               
               {/* Category Management */}
               <div className="bg-white rounded-xl shadow-sm p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Add Category</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Kategória hozzáadása</h3>
                 <form onSubmit={handleCreateCategory} className="space-y-4">
                   <input
                     type="text"
-                    placeholder="Category name"
+                    placeholder="Kategória neve"
                     value={categoryForm.name}
                     onChange={(e) => setCategoryForm({...categoryForm, name: e.target.value})}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                     required
                   />
                   <textarea
-                    placeholder="Description"
+                    placeholder="Leírás"
                     value={categoryForm.description}
                     onChange={(e) => setCategoryForm({...categoryForm, description: e.target.value})}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
@@ -390,14 +390,14 @@ function App() {
                     type="submit"
                     className="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700"
                   >
-                    Add Category
+                    Kategória hozzáadása
                   </button>
                 </form>
               </div>
 
               {/* Posts List */}
               <div className="bg-white rounded-xl shadow-sm p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Posts</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Legutóbbi bejegyzések</h3>
                 <div className="space-y-3">
                   {posts.slice(0, 5).map((post) => (
                     <div key={post.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
@@ -410,13 +410,13 @@ function App() {
                           onClick={() => editPost(post)}
                           className="text-blue-600 hover:text-blue-800 text-sm"
                         >
-                          Edit
+                          Szerkesztés
                         </button>
                         <button
                           onClick={() => handleDeletePost(post.id)}
                           className="text-red-600 hover:text-red-800 text-sm"
                         >
-                          Delete
+                          Törlés
                         </button>
                       </div>
                     </div>
