@@ -250,20 +250,20 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
               <div className="flex items-center">
-                <h1 className="text-2xl font-bold text-gray-900">Blog Dashboard</h1>
+                <h1 className="text-2xl font-bold text-gray-900">Blog Vezérlőpult</h1>
               </div>
               <div className="flex items-center space-x-4">
                 <button
                   onClick={() => setCurrentView('home')}
                   className="text-gray-600 hover:text-gray-900"
                 >
-                  View Blog
+                  Blog megtekintése
                 </button>
                 <button
                   onClick={handleLogout}
                   className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700"
                 >
-                  Logout
+                  Kijelentkezés
                 </button>
               </div>
             </div>
