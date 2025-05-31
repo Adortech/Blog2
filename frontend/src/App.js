@@ -475,7 +475,7 @@ function App() {
                       {post.excerpt || stripHtml(post.content).substring(0, 150) + '...'}
                     </p>
                     <button className="text-blue-600 hover:text-blue-800 font-medium">
-                      Read More →
+                      Tovább olvasom →
                     </button>
                   </div>
                 </article>
