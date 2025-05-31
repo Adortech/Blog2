@@ -102,9 +102,11 @@ def init_admin_user():
 # Initialize default categories
 def init_default_categories():
     default_categories = [
-        {"name": "Technology", "description": "Tech related posts"},
-        {"name": "Lifestyle", "description": "Lifestyle and personal posts"},
-        {"name": "Travel", "description": "Travel experiences and tips"}
+        {"name": "Technológia", "description": "Technológiai témájú bejegyzések"},
+        {"name": "Életmód", "description": "Életmód és személyes bejegyzések"},
+        {"name": "Utazás", "description": "Utazási élmények és tippek"},
+        {"name": "Gasztronómia", "description": "Receptek és kulináris élmények"},
+        {"name": "Kultúra", "description": "Művészet, zene, irodalom"}
     ]
     
     for cat_data in default_categories:
