@@ -79,7 +79,7 @@ function App() {
       setCurrentView('admin');
       setLoginData({ username: '', password: '' });
     } catch (error) {
-      alert('Invalid credentials');
+      alert('Érvénytelen hitelesítő adatok');
     }
     setLoading(false);
   };
