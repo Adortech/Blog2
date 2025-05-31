@@ -320,13 +320,12 @@ function App() {
                   
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Content</label>
-                    <ReactQuill
-                      theme="snow"
+                    <textarea
                       value={postForm.content}
-                      onChange={(value) => setPostForm({...postForm, content: value})}
-                      modules={quillModules}
-                      className="bg-white"
-                      style={{height: '300px', marginBottom: '50px'}}
+                      onChange={(e) => handleContentChange(e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      rows="12"
+                      required
                     />
                   </div>
                   
