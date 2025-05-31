@@ -181,15 +181,9 @@ function App() {
     return tmp.textContent || tmp.innerText || '';
   };
 
-  // Rich text editor configuration
-  const quillModules = {
-    toolbar: [
-      [{ 'header': [1, 2, 3, false] }],
-      ['bold', 'italic', 'underline', 'strike'],
-      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-      ['link', 'image'],
-      ['clean']
-    ],
+  // Rich text editor configuration - Simple textarea for now (more compatible)
+  const handleContentChange = (value) => {
+    setPostForm({...postForm, content: value});
   };
 
   // Login View
