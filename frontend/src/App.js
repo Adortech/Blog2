@@ -106,9 +106,9 @@ function App() {
       }
       await loadPosts();
       resetPostForm();
-      alert('Post saved successfully!');
+      alert('Bejegyzés sikeresen mentve!');
     } catch (error) {
-      alert('Error saving post');
+      alert('Hiba a bejegyzés mentése során');
     }
     setLoading(false);
   };
