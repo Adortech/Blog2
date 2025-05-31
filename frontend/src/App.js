@@ -277,12 +277,12 @@ function App() {
             <div className="lg:col-span-2">
               <div className="bg-white rounded-xl shadow-sm p-6">
                 <h2 className="text-xl font-bold text-gray-900 mb-6">
-                  {selectedPost ? 'Edit Post' : 'Create New Post'}
+                  {selectedPost ? 'Bejegyzés szerkesztése' : 'Új bejegyzés létrehozása'}
                 </h2>
                 
                 <form onSubmit={handlePostSubmit} className="space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Title</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Cím</label>
                     <input
                       type="text"
                       value={postForm.title}
@@ -293,14 +293,14 @@ function App() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Category</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Kategória</label>
                     <select
                       value={postForm.category}
                       onChange={(e) => setPostForm({...postForm, category: e.target.value})}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                       required
                     >
-                      <option value="">Select Category</option>
+                      <option value="">Válasszon kategóriát</option>
                       {categories.map((cat) => (
                         <option key={cat.id} value={cat.name}>{cat.name}</option>
                       ))}
@@ -308,7 +308,7 @@ function App() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Featured Image URL</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Kiemelt kép URL</label>
                     <input
                       type="url"
                       value={postForm.image_url}
@@ -319,7 +319,7 @@ function App() {
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Content</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Tartalom</label>
                     <textarea
                       value={postForm.content}
                       onChange={(e) => handleContentChange(e.target.value)}
@@ -338,7 +338,7 @@ function App() {
                       className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                     />
                     <label htmlFor="published" className="ml-2 text-sm text-gray-700">
-                      Published
+                      Közzétéve
                     </label>
                   </div>
                   
@@ -348,7 +348,7 @@ function App() {
                       disabled={loading}
                       className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-medium"
                     >
-                      {loading ? 'Saving...' : (selectedPost ? 'Update Post' : 'Create Post')}
+                      {loading ? 'Mentés...' : (selectedPost ? 'Bejegyzés frissítése' : 'Bejegyzés létrehozása')}
                     </button>
                     {selectedPost && (
                       <button
@@ -356,7 +356,7 @@ function App() {
                         onClick={resetPostForm}
                         className="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 font-medium"
                       >
-                        Cancel Edit
+                        Szerkesztés megszakítása
                       </button>
                     )}
                   </div>
