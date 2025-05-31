@@ -532,8 +532,8 @@ function App() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4">My Personal Blog</h3>
-            <p className="text-gray-400 mb-6">Built with React, FastAPI, and MongoDB</p>
+            <h3 className="text-2xl font-bold mb-4">Személyes Blogom</h3>
+            <p className="text-gray-400 mb-6">React, FastAPI és MongoDB technológiákkal építve</p>
             <button
               onClick={() => setCurrentView('login')}
               className="text-gray-500 hover:text-gray-300 text-xs underline transition duration-200"
