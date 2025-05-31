@@ -439,14 +439,6 @@ function App() {
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-4">My Personal Blog</h1>
             <p className="text-xl text-blue-100 mb-8">Thoughts, stories, and ideas worth sharing</p>
-            <div className="flex justify-center space-x-4">
-              <button
-                onClick={() => setCurrentView('login')}
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-200"
-              >
-                Admin Login
-              </button>
-            </div>
           </div>
         </div>
       </header>
